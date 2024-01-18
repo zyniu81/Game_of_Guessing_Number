@@ -2,6 +2,21 @@ import random
 
 
 def guessing_number():
+    """Guessing game between the computer and the player.
+
+       The function generates a random integer between 1 and 100, and prompts the player to guess the number.
+       If the player's guess is too small, the function prints "Too small!".
+       If the player's guess is too big, the function prints "Too big!".
+       If the player's guess is correct, the function prints "You win!" and terminates the game.
+       If the player's input is not a number, the function prints "It's not a number!".
+       If the player interrupts the game, the function prints "Interrupted by the player" and terminates the game.
+
+       Args:
+           None
+
+       Returns:
+           None
+       """
     while True:
         try:
             computer_number = random.randint(1, 100)
